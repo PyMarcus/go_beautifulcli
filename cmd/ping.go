@@ -28,4 +28,8 @@ var PingCmd = &cobra.Command{
 
 func init() {
 	PingCmd.Flags().StringVarP(&urlPath, "url", "u", "", "The url path") //var, name, short, value, help
+
+	if err := PingCmd.MarkFlagRequired("url"); err != nil{
+		fmt.Println(err)
+	}
 }
