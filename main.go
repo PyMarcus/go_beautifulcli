@@ -1,5 +1,11 @@
-package main 
+/*
+Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 
-func main(){
+*/
+package main
 
+import "github.com/PyMarcus/go_beautifulcli/cmd"
+
+func main() {
+	cmd.Execute()
 }
