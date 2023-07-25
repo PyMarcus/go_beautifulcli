@@ -21,5 +21,5 @@ var NetCmd = &cobra.Command{
 }
 
 func init() {
-	
+	NetCmd.AddCommand(PingCmd)
 }
